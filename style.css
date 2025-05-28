@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* saca el borde feo */
+    background-color: rgb(230, 220, 220);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(175, 154, 154)
+}
+
+header {
+    display: flex; /* todo en horizontal */
+    justify-content: space-between; /* efecto esquina */
+    background-color: rgb(223, 201, 201);
+    align-items: center; /* alinea verticalmente */
+    min-height: 70px; /* altura del header */
+    padding: 15px; 
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(131, 114, 114);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* para q los objetos se vean uno arriba del otro */
+       
+    }
+    
+    .logo img {
+        height: 50px; /* cambia el tamaño de la imagen del logo */
+    }
+    
+    nav a {
+        font-size: 14px; /* cambia el tamaño de la fuente */
+    }
+}
+
+.intro {
+    align-items: center;
+    text-align: center;
+    color: rgb(131, 114, 114);
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* para que los objetos se vean uno arriba del otro */
+    padding: 20px;
+    color: rgb(131, 114, 114);
+}
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+    color: rgb(131, 114, 114);
+}
